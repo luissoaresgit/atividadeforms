@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Listagem de Alunos</title>
+</head>
+<body>
+    <h2>Listagem de Alunos</h2>
+    <ul>
+        {% for aluno in alunos %}
+        <li>{{ aluno.nome }} - {{ aluno.curso }} ({{ aluno.idade }} anos)</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
